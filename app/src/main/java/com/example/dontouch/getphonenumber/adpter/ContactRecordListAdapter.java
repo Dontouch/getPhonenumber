@@ -92,13 +92,7 @@ public class ContactRecordListAdapter extends BaseAdapter {
 
         String location = "";
 
-        try {
-            location = getPhoneLocation.calcMobileCity(number);
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
-
-        Log.i("location",location);
+//...
 
         if("".equals(name)){
             holder.name.setText(number);
